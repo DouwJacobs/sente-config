@@ -20,6 +20,14 @@
     {
       "name": "Bank Fees",
       "color": "orange"
+    },
+    {
+      "name": "Invest-save-repay",
+      "color": "purple"
+    },
+    {
+      "name": "Exceptions",
+      "color": "orange"
     }
   ],
   "categories": [
@@ -127,10 +135,129 @@
       "name": "Interest earned",
       "group_name": "",
       "kind": "income"
+    },
+    {
+      "name": "Coffee",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Cleaning",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Security",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Home Loan",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Reimbursements",
+      "group_name": "",
+      "kind": "income"
     }
   ],
-  "merchants": [],
-  "merchant_rules": [],
+  "merchants": [
+    {
+      "name": "Amazon"
+    },
+    {
+      "name": "OpenAI"
+    },
+    {
+      "name": "Spotify"
+    },
+    {
+      "name": "Starbucks",
+      "category": "Coffee",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "McDonald's",
+      "category": "Eating out",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "Burger King",
+      "category": "Eating out",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "KFC",
+      "category": "Eating out",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "Hertz"
+    }
+  ],
+  "merchant_rules": [
+    {
+      "merchant": "Amazon",
+      "pattern": "(DL\\*Amazon Retail)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "OpenAI",
+      "pattern": "(OPENAI\\s*\\*CHATGPT SUB)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Spotify",
+      "pattern": "(\\bSpotifyZA\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Starbucks",
+      "pattern": "(\\bStarbucks\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "McDonald's",
+      "pattern": "(\\bMcDonald's\\b|\\bMCD\\s)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Burger King",
+      "pattern": "(\\bBURGER KING\\b|\\bPURCH BK\\s)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "KFC",
+      "pattern": "(\\bKFC\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Hertz",
+      "pattern": "(\\bHERTZ\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    }
+  ],
   "rules": [
     {
       "pattern": "Monthly Account Fee",
@@ -168,6 +295,56 @@
       "spending_group": "Income",
       "builtin": true,
       "direction": "credit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "Monthly Credit Fee",
+      "category": "Bank charges",
+      "spending_group": "Bank Fees",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "Int On Credit Balance",
+      "category": "Interest earned",
+      "spending_group": "Income",
+      "builtin": true,
+      "direction": "credit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "Int On Debit Balance",
+      "category": "Interest paid",
+      "spending_group": "Recurring",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "(OPENAI\\s*\\*CHATGPT SUB)",
+      "category": "Subscriptions",
+      "spending_group": "Recurring",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "(\\bSpotifyZA\\b)",
+      "category": "Subscriptions",
+      "spending_group": "Recurring",
+      "builtin": true,
+      "direction": "debit",
       "priority": -1000,
       "enabled": true,
       "category_group_name": ""
