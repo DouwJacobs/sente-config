@@ -1,0 +1,76 @@
+{
+  "version": 2,
+  "spending_groups": [
+    {
+      "name": "Communications",
+      "color": "purple"
+    },
+    {
+      "name": "Debt",
+      "color": "rose"
+    },
+    {
+      "name": "Utilities",
+      "color": "blue"
+    },
+    {
+      "name": "Insurance",
+      "color": "teal"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Birthdays",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Building",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Garden",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Bank notices",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Once-off expenses",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Online shopping",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Tithe & giving",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Cash",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Savings",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Retirement",
+      "group_name": "",
+      "kind": "expense"
+    }
+  ],
+  "merchants": [],
+  "merchant_rules": [],
+  "rules": []
+}
