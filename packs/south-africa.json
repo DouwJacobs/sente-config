@@ -1,0 +1,347 @@
+{
+  "version": 2,
+  "spending_groups": [
+    {
+      "name": "Day-to-day",
+      "color": "blue"
+    },
+    {
+      "name": "Recurring",
+      "color": "amber"
+    },
+    {
+      "name": "Income",
+      "color": "teal"
+    },
+    {
+      "name": "Bank Fees",
+      "color": "orange"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Groceries",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Transport & fuel",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Bank charges",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Interest paid",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Insurance",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Phone & internet",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Pets",
+      "group_name": "",
+      "kind": "expense"
+    },
+    {
+      "name": "Interest earned",
+      "group_name": "",
+      "kind": "income"
+    }
+  ],
+  "merchants": [
+    {
+      "name": "Checkers"
+    },
+    {
+      "name": "Pick n Pay"
+    },
+    {
+      "name": "SPAR"
+    },
+    {
+      "name": "Woolworths"
+    },
+    {
+      "name": "Takealot"
+    },
+    {
+      "name": "Clicks"
+    },
+    {
+      "name": "Makro"
+    },
+    {
+      "name": "Engen"
+    },
+    {
+      "name": "Builders Warehouse"
+    },
+    {
+      "name": "Chamberlains"
+    },
+    {
+      "name": "Mica"
+    },
+    {
+      "name": "Webafrica",
+      "category": "Phone & internet",
+      "category_group_name": "",
+      "spending_group": "Recurring"
+    },
+    {
+      "name": "Petshop Science",
+      "category": "Pets",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "Absa Life",
+      "category": "Insurance",
+      "category_group_name": "",
+      "spending_group": "Recurring"
+    },
+    {
+      "name": "Momentum"
+    },
+    {
+      "name": "10X Investments"
+    },
+    {
+      "name": "admyt",
+      "category": "Transport & fuel",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "FNB"
+    },
+    {
+      "name": "Bargain Books"
+    },
+    {
+      "name": "Talisman Hire"
+    },
+    {
+      "name": "Fleisherei",
+      "category": "Groceries",
+      "category_group_name": "",
+      "spending_group": "Day-to-day"
+    },
+    {
+      "name": "Tixsa"
+    }
+  ],
+  "merchant_rules": [
+    {
+      "merchant": "Checkers",
+      "pattern": "(\\bCHECKERS\\b|\\b(?:CH|CC) FRESH X\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Pick n Pay",
+      "pattern": "(\\bPICK N PAY\\b|\\bPNP FAM\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "SPAR",
+      "pattern": "(\\bSPAR\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Woolworths",
+      "pattern": "(\\bWOOLWORTHS\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Takealot",
+      "pattern": "(\\bTAKEALOT\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Clicks",
+      "pattern": "(\\bCLICKS\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Makro",
+      "pattern": "(\\bMAKRO ONLINE\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Engen",
+      "pattern": "(\\bENGEN\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Builders Warehouse",
+      "pattern": "(\\bBUILDERS WAREHOUSE\\b|\\bPURCH BWH\\s)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Chamberlains",
+      "pattern": "(\\bF H CHAMBERLAIN\\b|\\b1SA CHAMBERLAINS\\b|\\bCHAMBERLAINS\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Mica",
+      "pattern": "(\\bMICA\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Webafrica",
+      "pattern": "(\\bWEB AFRICA\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Petshop Science",
+      "pattern": "(\\bPETSHOP SCIENCE\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Absa Life",
+      "pattern": "(\\bABSALIFE\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Momentum",
+      "pattern": "(\\bMOMENTUM\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "10X Investments",
+      "pattern": "(\\b10XRA COL\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "admyt",
+      "pattern": "(\\bADMYT PARKING\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "FNB",
+      "pattern": "(#(?:EFT CHARGE|PAYMENTS BUNDLE FEE|INT PYMT FEE|ELECTRONIC TRF FEE|SERVICE FEES)|\\bFNB GAPCVRGP\\b|\\bFNB ST INS\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Bargain Books",
+      "pattern": "(\\bBARGAIN BOOKS\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Fleisherei",
+      "pattern": "(\\bFLEISHEREI\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "merchant": "Tixsa",
+      "pattern": "(\\bTIXSA\\b)",
+      "direction": "debit",
+      "priority": 100,
+      "enabled": true
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "(#(?:EFT CHARGE|PAYMENTS BUNDLE FEE|INT PYMT FEE|ELECTRONIC TRF FEE|SERVICE FEES))",
+      "category": "Bank charges",
+      "spending_group": "Bank Fees",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "Eft Charge-Fnb To Other",
+      "category": "Bank charges",
+      "spending_group": "Bank Fees",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "(\\b(?:DR|FUSION) INTEREST REBATE\\b)",
+      "category": "Interest earned",
+      "spending_group": "Income",
+      "builtin": true,
+      "direction": "credit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "(\\bWOOLWORTHS FOOD\\b|\\bPICK N PAY ASAP\\b)",
+      "category": "Groceries",
+      "spending_group": "Day-to-day",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    },
+    {
+      "pattern": "(\\bFNB GAPCVRGP\\b|\\bFNB ST INS_P\\b)",
+      "category": "Insurance",
+      "spending_group": "Recurring",
+      "builtin": true,
+      "direction": "debit",
+      "priority": -1000,
+      "enabled": true,
+      "category_group_name": ""
+    }
+  ]
+}
