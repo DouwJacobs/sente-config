@@ -139,7 +139,8 @@
       "builtin": true,
       "direction": "debit",
       "priority": -1000,
-      "enabled": true
+      "enabled": true,
+      "category_group_name": ""
     },
     {
       "pattern": "Monthly Service Fee",
@@ -148,7 +149,8 @@
       "builtin": true,
       "direction": "debit",
       "priority": -1000,
-      "enabled": true
+      "enabled": true,
+      "category_group_name": ""
     },
     {
       "pattern": "Service Fees",
@@ -157,7 +159,8 @@
       "builtin": true,
       "direction": "debit",
       "priority": -1000,
-      "enabled": true
+      "enabled": true,
+      "category_group_name": ""
     },
     {
       "pattern": "Salary",
@@ -166,7 +169,8 @@
       "builtin": true,
       "direction": "credit",
       "priority": -1000,
-      "enabled": true
+      "enabled": true,
+      "category_group_name": ""
     }
   ]
 }
