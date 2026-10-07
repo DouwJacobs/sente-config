@@ -24,7 +24,7 @@ Rules specify description `pattern`, `category`, `direction` (`any`, `debit`, `c
 
 Imports merge in the order you explicitly apply them. Identical entries are reused. Duplicate identities within a file reject. Different values for an existing identity appear as replacements and require confirmation, including replacements of local edits. Omitted entries remain; a repository update never silently deletes local configuration. Existing transactions are not rewritten.
 
-See [Sente's full configuration guide](https://github.com/DouwJacobs/sente/blob/codex/portable-configuration/docs/RULESETS.md) for reference and account mapping. The application guide will be available on main after the portable configuration change is merged.
+See [Sente's full configuration guide](https://github.com/DouwJacobs/sente/blob/main/docs/RULESETS.md) for reference and account mapping. The application guide will be available on main after the portable configuration change is merged.
 
 ## Releases
 
