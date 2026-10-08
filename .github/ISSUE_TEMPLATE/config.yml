@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Private security or sensitive-data report
+    url: https://github.com/DouwJacobs/sente-config/security/advisories/new
+    about: Report vulnerabilities and accidental disclosures privately.

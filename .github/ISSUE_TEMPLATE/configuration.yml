@@ -1,0 +1,44 @@
+name: Merchant, category or spending group
+description: Propose a reusable addition or fix
+
+title: "[Configuration]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use public business names and synthetic descriptions only. Never attach a real statement or financial export."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of change
+      options: [Merchant recognition, Category, Spending group, Rule correction]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Public name and country/region
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Public business website or evidence
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change and classification reasoning
+      description: Explain mixed-purpose purchases and why an existing entry is insufficient.
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Synthetic matching and non-matching descriptions
+      description: Remove all private identifiers; do not paste real transaction rows.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public data
+      options:
+        - label: This issue contains no private recipient names, real financial records or customer/account identifiers.
+          required: true
