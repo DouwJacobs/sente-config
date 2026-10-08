@@ -1,0 +1,543 @@
+[
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(DL\\*Amazon Retail)",
+    "target": "Amazon",
+    "matches": [
+      "PURCH DL*Amazon Retail"
+    ],
+    "non_matches": [
+      "DLXAmazon Retail",
+      "Amazon web services"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(OPENAI\\s*\\*CHATGPT SUB)",
+    "target": "OpenAI",
+    "matches": [
+      "PURCH OPENAI *CHATGPT SUB",
+      "openai*chatgpt sub"
+    ],
+    "non_matches": [
+      "OPENAI API",
+      "OPENAI XCHATGPT SUB"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bSpotifyZA\\b)",
+    "target": "Spotify",
+    "matches": [
+      "PURCH SpotifyZA"
+    ],
+    "non_matches": [
+      "SpotifyZAX"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bStarbucks\\b)",
+    "target": "Starbucks",
+    "matches": [
+      "PURCH Starbucks"
+    ],
+    "non_matches": [
+      "Starbucksish"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bMcDonald's\\b|\\bMCD\\s)",
+    "target": "McDonald's",
+    "matches": [
+      "PURCH McDonald's",
+      "PURCH MCD Example"
+    ],
+    "non_matches": [
+      "MCDONALDSON"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bBURGER KING\\b|\\bPURCH BK\\s)",
+    "target": "Burger King",
+    "matches": [
+      "PURCH BURGER KING",
+      "PURCH BK Example"
+    ],
+    "non_matches": [
+      "BURGER KINGDOM"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bKFC\\b)",
+    "target": "KFC",
+    "matches": [
+      "PURCH KFC"
+    ],
+    "non_matches": [
+      "KFCISH"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bHERTZ\\b)",
+    "target": "Hertz",
+    "matches": [
+      "PURCH HERTZ"
+    ],
+    "non_matches": [
+      "HERTZISH"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Monthly Account Fee",
+    "target": "Bank charges",
+    "matches": [
+      "Monthly Account Fee"
+    ],
+    "non_matches": [
+      "Monthly Account Payment"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Monthly Service Fee",
+    "target": "Bank charges",
+    "matches": [
+      "Monthly Service Fee"
+    ],
+    "non_matches": [
+      "Monthly Service Payment"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Service Fees",
+    "target": "Bank charges",
+    "matches": [
+      "Service Fees"
+    ],
+    "non_matches": [
+      "Service Payment"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Salary",
+    "target": "Salary",
+    "matches": [
+      "Salary"
+    ],
+    "non_matches": [
+      "Example reimbursement"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Monthly Credit Fee",
+    "target": "Bank charges",
+    "matches": [
+      "Monthly Credit Fee"
+    ],
+    "non_matches": [
+      "Monthly Credit Payment"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Int On Credit Balance",
+    "target": "Interest earned",
+    "matches": [
+      "Int On Credit Balance"
+    ],
+    "non_matches": [
+      "Int On Debit Balance"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "Int On Debit Balance",
+    "target": "Interest paid",
+    "matches": [
+      "Int On Debit Balance"
+    ],
+    "non_matches": [
+      "Int On Credit Balance"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "(OPENAI\\s*\\*CHATGPT SUB)",
+    "target": "Subscriptions",
+    "matches": [
+      "PURCH OPENAI *CHATGPT SUB",
+      "openai*chatgpt sub"
+    ],
+    "non_matches": [
+      "OPENAI API",
+      "OPENAI XCHATGPT SUB"
+    ]
+  },
+  {
+    "file": "sente.json",
+    "collection": "rules",
+    "pattern": "(\\bSpotifyZA\\b)",
+    "target": "Subscriptions",
+    "matches": [
+      "PURCH SpotifyZA"
+    ],
+    "non_matches": [
+      "SpotifyZAX"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bCHECKERS\\b|\\b(?:CH|CC) FRESH X\\b)",
+    "target": "Checkers",
+    "matches": [
+      "PURCH CHECKERS",
+      "PURCH CH FRESH X Example",
+      "PURCH CC FRESH X Example"
+    ],
+    "non_matches": [
+      "CHECKERSBOARD"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bPICK N PAY\\b|\\bPNP FAM\\b)",
+    "target": "Pick n Pay",
+    "matches": [
+      "PURCH PICK N PAY",
+      "PURCH PNP FAM Example"
+    ],
+    "non_matches": [
+      "PNP FAMILY"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bSPAR\\b)",
+    "target": "SPAR",
+    "matches": [
+      "PURCH SPAR"
+    ],
+    "non_matches": [
+      "SPARK"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bWOOLWORTHS\\b)",
+    "target": "Woolworths",
+    "matches": [
+      "PURCH WOOLWORTHS"
+    ],
+    "non_matches": [
+      "WOOLWORTHSISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bTAKEALOT\\b)",
+    "target": "Takealot",
+    "matches": [
+      "PURCH TAKEALOT"
+    ],
+    "non_matches": [
+      "TAKEALOTISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bCLICKS\\b)",
+    "target": "Clicks",
+    "matches": [
+      "PURCH CLICKS"
+    ],
+    "non_matches": [
+      "CLICKSTREAM"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bMAKRO ONLINE\\b)",
+    "target": "Makro",
+    "matches": [
+      "PURCH MAKRO ONLINE"
+    ],
+    "non_matches": [
+      "MAKRO ONLINEISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bENGEN\\b)",
+    "target": "Engen",
+    "matches": [
+      "PURCH ENGEN"
+    ],
+    "non_matches": [
+      "ENGENISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bBUILDERS WAREHOUSE\\b|\\bPURCH BWH\\s)",
+    "target": "Builders Warehouse",
+    "matches": [
+      "PURCH BUILDERS WAREHOUSE",
+      "PURCH BWH Example"
+    ],
+    "non_matches": [
+      "BWHATEVER"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bF H CHAMBERLAIN\\b|\\b1SA CHAMBERLAINS\\b|\\bCHAMBERLAINS\\b)",
+    "target": "Chamberlains",
+    "matches": [
+      "PURCH F H CHAMBERLAIN",
+      "PURCH 1SA CHAMBERLAINS",
+      "PURCH CHAMBERLAINS"
+    ],
+    "non_matches": [
+      "CHAMBERLAINSISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bMICA\\b)",
+    "target": "Mica",
+    "matches": [
+      "PURCH MICA"
+    ],
+    "non_matches": [
+      "MICADO"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bWEB AFRICA\\b)",
+    "target": "Webafrica",
+    "matches": [
+      "WEB AFRICA"
+    ],
+    "non_matches": [
+      "WEB AFRICAN"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bPETSHOP SCIENCE\\b)",
+    "target": "Petshop Science",
+    "matches": [
+      "PETSHOP SCIENCE"
+    ],
+    "non_matches": [
+      "PETSHOP SCIENCES"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bABSALIFE\\b)",
+    "target": "Absa Life",
+    "matches": [
+      "ABSALIFE"
+    ],
+    "non_matches": [
+      "ABSALIFEISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bMOMENTUM\\b)",
+    "target": "Momentum",
+    "matches": [
+      "MOMENTUM"
+    ],
+    "non_matches": [
+      "MOMENTUMISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\b10XRA COL\\b)",
+    "target": "10X Investments",
+    "matches": [
+      "10XRA COL"
+    ],
+    "non_matches": [
+      "10XRA COLLECT"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bADMYT PARKING\\b)",
+    "target": "admyt",
+    "matches": [
+      "ADMYT PARKING"
+    ],
+    "non_matches": [
+      "ADMYT PARKINGISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(#(?:EFT CHARGE|PAYMENTS BUNDLE FEE|INT PYMT FEE|ELECTRONIC TRF FEE|SERVICE FEES)|\\bFNB GAPCVRGP\\b|\\bFNB ST INS\\b)",
+    "target": "FNB",
+    "matches": [
+      "#EFT CHARGE Example",
+      "#SERVICE FEES",
+      "FNB GAPCVRGP",
+      "FNB ST INS"
+    ],
+    "non_matches": [
+      "EFT Example Recipient",
+      "FNBISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bBARGAIN BOOKS\\b)",
+    "target": "Bargain Books",
+    "matches": [
+      "BARGAIN BOOKS"
+    ],
+    "non_matches": [
+      "BARGAIN BOOKSTORE"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bFLEISHEREI\\b)",
+    "target": "Fleisherei",
+    "matches": [
+      "FLEISHEREI"
+    ],
+    "non_matches": [
+      "FLEISHEREIISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "merchant_rules",
+    "pattern": "(\\bTIXSA\\b)",
+    "target": "Tixsa",
+    "matches": [
+      "TIXSA"
+    ],
+    "non_matches": [
+      "TIXSAISH"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "rules",
+    "pattern": "(#(?:EFT CHARGE|PAYMENTS BUNDLE FEE|INT PYMT FEE|ELECTRONIC TRF FEE|SERVICE FEES))",
+    "target": "Bank charges",
+    "matches": [
+      "#EFT CHARGE Example",
+      "#INT PYMT FEE-Example",
+      "#SERVICE FEES"
+    ],
+    "non_matches": [
+      "EFT Example Recipient",
+      "SERVICE PAYMENT"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "rules",
+    "pattern": "Eft Charge-Fnb To Other",
+    "target": "Bank charges",
+    "matches": [
+      "Eft Charge-Fnb To Other"
+    ],
+    "non_matches": [
+      "EFT Example Recipient"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "rules",
+    "pattern": "(\\b(?:DR|FUSION) INTEREST REBATE\\b)",
+    "target": "Interest earned",
+    "matches": [
+      "DR INTEREST REBATE",
+      "FUSION INTEREST REBATE"
+    ],
+    "non_matches": [
+      "INTEREST PAYMENT"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "rules",
+    "pattern": "(\\bWOOLWORTHS FOOD\\b|\\bPICK N PAY ASAP\\b)",
+    "target": "Groceries",
+    "matches": [
+      "PURCH WOOLWORTHS FOOD",
+      "PICK N PAY ASAP"
+    ],
+    "non_matches": [
+      "WOOLWORTHS CLOTHING",
+      "PICK N PAY GENERAL"
+    ]
+  },
+  {
+    "file": "packs/south-africa.json",
+    "collection": "rules",
+    "pattern": "(\\bFNB GAPCVRGP\\b|\\bFNB ST INS_P\\b)",
+    "target": "Insurance",
+    "matches": [
+      "FNB GAPCVRGP",
+      "FNB ST INS_P"
+    ],
+    "non_matches": [
+      "FNB HOME",
+      "FNB ST INS_OTHER"
+    ]
+  }
+]

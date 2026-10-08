@@ -30,7 +30,7 @@ Each optional file is a separate source, even though all files are in this repos
 
 Merchant recognition and categorization are separate. Woolworths, Takealot, Clicks, Engen, Momentum, Amazon, Hertz and other mixed-purpose merchants have no category default. Food-specific Woolworths and Pick n Pay descriptions can receive Groceries from the South African pack. Explicit ChatGPT subscription and SpotifyZA descriptions receive Subscriptions; other OpenAI/Amazon products are not classified as subscriptions.
 
-Restaurant, coffee, pet-shop, parking, ISP and specific insurance descriptions have selected defaults. They are fallbacks, not a substitute for reviewing ambiguous transactions. Local merchant packs and neighbourhood aliases are excluded for location privacy.
+Restaurant, coffee, pet-shop, parking, ISP and specific insurance descriptions have selected defaults. They are fallbacks, not a substitute for reviewing ambiguous transactions. Local merchant packs and neighbourhood-specific aliases are excluded to protect contributors' location privacy. Talisman Hire remains a neutral merchant name without a guessed naming rule.
 
 The FNB pack includes explicit fee descriptions and directed interest rebates. EFT *charges* are bank fees; personal EFT recipients are excluded. Broad `INTEREST`, `SAVINGS`, `SCHD TRF`, `BYC DEBIT`, generic bank-notice words and account-specific project patterns are deliberately excluded.
 
@@ -50,6 +50,10 @@ See [Sente's full configuration guide](https://github.com/DouwJacobs/sente/blob/
 
 ## Validation and releases
 
-The packs were checked through Sente's actual preview/apply importer against isolated synthetic databases, both individually and together. Repeat imports produced no configuration changes. Focused matching checks cover subscription literals, Checkers aliases, local payment descriptions and the distinction between EFT charges and personal transfers.
+The packs were checked through Sente's actual preview/apply importer against isolated synthetic databases, both individually and together. Repeat imports produced no configuration changes. Focused matching checks cover subscription literals, Checkers aliases, literal payment-processor descriptions and the distinction between EFT charges and personal transfers.
 
 Schema versions are independent of application releases. Tag compatible pack releases and pin tags/commits where reproducibility matters. The existing `v1.0.0` tag retains its original smaller starter; use main for these expanded packs. The application's bundled offline snapshot is refreshed separately when shipping an application release.
+
+## Community contributions
+
+Suggest reusable merchants, categories and spending groups through issues or fork-based pull requests. Read [CONTRIBUTING.md](CONTRIBUTING.md) for pack placement, privacy rules, pattern examples and local validation. [MAINTAINING.md](MAINTAINING.md) describes review and branch controls; [SECURITY.md](SECURITY.md) covers private reports. All contributions use GPL-3.0-only; see [LICENSE](LICENSE).
